@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Rios Co</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: #0a0a12;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 40px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .logo {
+            font-family: 'Space Mono', monospace;
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: rgba(255,255,255,0.35);
+        }
+
+        nav a {
+            color: rgba(255,255,255,0.5);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        nav a:hover { color: #fff; }
+
+        main {
+            flex: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 100px 40px;
+        }
+
+        .eyebrow {
+            font-family: 'Space Mono', monospace;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: rgba(255,255,255,0.3);
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 28px;
+            letter-spacing: -1px;
+        }
+
+        h1 span { color: rgba(255,255,255,0.25); }
+
+        .tagline {
+            font-size: 18px;
+            line-height: 1.7;
+            color: rgba(255,255,255,0.6);
+            max-width: 620px;
+            margin-bottom: 72px;
+        }
+
+        .divider {
+            width: 40px;
+            height: 2px;
+            background: rgba(255,80,80,0.5);
+            margin-bottom: 48px;
+        }
+
+        .product-label {
+            font-family: 'Space Mono', monospace;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: rgba(255,80,80,0.7);
+            margin-bottom: 16px;
+        }
+
+        .product-name {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .product-desc {
+            font-size: 16px;
+            line-height: 1.7;
+            color: rgba(255,255,255,0.55);
+            max-width: 620px;
+            margin-bottom: 28px;
+        }
+
+        .product-link {
+            display: inline-block;
+            padding: 12px 28px;
+            background: rgba(255,80,80,0.1);
+            border: 1px solid rgba(255,80,80,0.3);
+            border-radius: 10px;
+            color: #ff7070;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: lowercase;
+            transition: all 0.2s;
+        }
+
+        .product-link:hover {
+            background: rgba(255,80,80,0.18);
+            border-color: rgba(255,80,80,0.6);
+            color: #ff9090;
+        }
+
+        footer {
+            padding: 40px 60px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-name {
+            font-family: 'Space Mono', monospace;
+            font-size: 12px;
+            color: rgba(255,255,255,0.2);
+        }
+
+        .footer-contact {
+            font-size: 13px;
+            color: rgba(255,255,255,0.3);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-contact:hover { color: rgba(255,255,255,0.6); }
+
+        @media (max-width: 600px) {
+            header { padding: 28px 24px; }
+            main { padding: 60px 24px; }
+            h1 { font-size: 36px; }
+            footer { padding: 28px 24px; flex-direction: column; gap: 12px; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">la rios <span>co</span></div>
+        <nav><a href="mailto:mgmt@larioco.net">contact</a></nav>
+    </header>
+
+    <main>
+        <div class="eyebrow">software company</div>
+        <h1>we build tools<br><span>people actually use.</span></h1>
+        <p class="tagline">La Rios Co is a software company building AI-powered tools for sales professionals. We develop products that help sales reps perform better in real time, starting with Brutus AI.</p>
+
+        <div class="divider"></div>
+
+        <div class="product-label">product</div>
+        <div class="product-name">Brutus AI</div>
+        <p class="product-desc">Brutus AI is a real-time sales coaching desktop app that listens to your calls and gives you live feedback while you're on them — so you stop making the same mistakes and start closing more deals. It runs quietly in the background, analyzing your conversation every 30 seconds and flagging objections, weak language, and missed signals the moment they happen. No reviewing recordings after the fact, no guessing what went wrong. Just brutally honest coaching, exactly when you need it.</p>
+        <a href="https://brutusai.coach" class="product-link">visit brutusai.coach</a>
+    </main>
+
+    <footer>
+        <div class="footer-name">La Rios Co &copy; 2026</div>
+        <a href="mailto:mgmt@larioco.net" class="footer-contact">mgmt@larioco.net</a>
+    </footer>
+</body>
+</html>
